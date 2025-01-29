@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "spring.datasource.postgresql.url",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.datasource.postgresql.url'"
+}]}

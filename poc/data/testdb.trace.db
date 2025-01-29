@@ -1,0 +1,8 @@
+2024-12-23 12:38:32 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM TRANSACTION \000d\000a\000d\000aTRUNCATE [*]TRANSACTION"; SQL statement:
+SELECT * FROM TRANSACTION 
+
+TRUNCATE TRANSACTION [42000-214]
+2024-12-23 12:38:37 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TRUNCATE [*]TRANSACTION"; expected "TABLE"; SQL statement:
+TRUNCATE TRANSACTION [42001-214]

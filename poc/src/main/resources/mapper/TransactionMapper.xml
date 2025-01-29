@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.poc.poc.mapper.TransactionMapper">
+        
+    <insert id="insertTransaction" keyProperty="id" parameterType="com.poc.poc.model.Transaction" useGeneratedKeys="true">
+        INSERT INTO transaction (description, amount, transaction_date)
+        VALUES (#{description}, #{amount}, #{transactionDate})
+    </insert>
+        
+    <select id="selectTransactionById" resultType="com.poc.poc.model.Transaction">
+        SELECT id, description, amount, transaction_date
+        FROM transaction
+        WHERE id = #{id}
+    </select>
+    
+    <select id="selectAllTransaction" resultType="com.poc.poc.model.Transaction">
+        SELECT id, description, amount, transaction_date
+        FROM transaction
+    </select>
+    
+</mapper>
